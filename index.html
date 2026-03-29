@@ -481,7 +481,7 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
       mx.height=window.innerHeight;
       cols=Math.floor(mx.width/16);
       drops=[];
-      for(let i=0;i<cols;i++) drops[i]=Math.floor(Math.random()*mx.height/16);
+      for(let i=0;i<cols;i++) drops[i]=0;
     }
     initMatrix();
     window.addEventListener('resize',initMatrix);
