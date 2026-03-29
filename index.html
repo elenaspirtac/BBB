@@ -483,12 +483,10 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
       drops=[];
       for(let i=0;i<cols;i++) drops[i]=0;
     }
-    initMatrix();
-    window.addEventListener('resize',initMatrix);
     function drawMatrix(){
       requestAnimationFrame(drawMatrix);
       if(c!==4){if(running){ctx.clearRect(0,0,mx.width,mx.height);running=false;}return;}
-      if(!running){initMatrix();running=true;}
+      if(!running||mx.width!==window.innerWidth){initMatrix();running=true;}
       ctx.fillStyle='rgba(13,17,23,0.08)';
       ctx.fillRect(0,0,mx.width,mx.height);
       ctx.font='bold 16px monospace';
