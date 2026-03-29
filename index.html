@@ -390,15 +390,15 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
 <div class="slide" id="s4" style="position:relative;overflow:hidden">
   <canvas id="matrix" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none"></canvas>
   <div style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 20px 60px">
-    <div style="font-size:clamp(14px,2.5vw,28px);color:#FFD700;text-shadow:0 0 10px #000,0 0 20px #000,0 0 30px #000,3px 3px #000">THE SOLUTION 🛠️</div>
-    <div style="font-size:clamp(9px,1.4vw,16px);color:#f0f0f0;text-shadow:0 0 10px #000,0 0 20px #000,0 0 30px #000,2px 2px #000;line-height:1.6;text-align:center">An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</div>
+    <div style="background:rgba(0,0,0,0.8);padding:12px 30px;font-size:clamp(14px,2.5vw,28px);color:#FFD700;text-shadow:3px 3px #000">THE SOLUTION 🛠️</div>
+    <div style="background:rgba(0,0,0,0.8);padding:8px 24px;font-size:clamp(9px,1.4vw,16px);color:#f0f0f0;text-shadow:2px 2px #000;line-height:1.6;text-align:center">An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</div>
     <div style="display:flex;gap:6px;justify-content:center;flex-wrap:wrap">
       <div class="block" style="background:#111;padding:8px 10px"><div class="bicon" style="font-size:22px">🌐</div><div class="btitle" style="font-size:7px">Open Source</div></div>
       <div class="block" style="background:#111;padding:8px 10px"><div class="bicon" style="font-size:22px">🤖</div><div class="btitle" style="font-size:7px">AI-Enabled</div></div>
       <div class="block" style="background:#111;padding:8px 10px"><div class="bicon" style="font-size:22px">👥</div><div class="btitle" style="font-size:7px">Community<br>Driven</div></div>
       <div class="block" style="background:#111;padding:8px 10px"><div class="bicon" style="font-size:22px">⚡</div><div class="btitle" style="font-size:7px">Vibe-Coded</div></div>
     </div>
-    <div style="font-size:clamp(18px,3.5vw,42px);color:#55ff55;text-shadow:0 0 10px #000,0 0 20px #000,0 0 30px #000,4px 4px #000">DEMO 🚀</div>
+    <div style="background:rgba(0,0,0,0.8);padding:10px 30px;font-size:clamp(18px,3.5vw,42px);color:#55ff55;text-shadow:4px 4px #000">DEMO 🚀</div>
   </div>
 </div>
 
@@ -470,7 +470,7 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
       requestAnimationFrame(drawMatrix);
       if(c!==4){if(running){ctx.clearRect(0,0,mx.width,mx.height);running=false;}return;}
       if(!running||mx.width!==window.innerWidth){initMatrix();running=true;}
-      ctx.fillStyle='rgba(13,17,23,0.08)';
+      ctx.fillStyle='rgba(13,17,23,0.15)';
       ctx.fillRect(0,0,mx.width,mx.height);
       ctx.font='bold 16px monospace';
       for(let i=0;i<cols;i++){
