@@ -387,30 +387,36 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
 </div>
 
 <!-- ══ 4 — SOLUTION / DEMO INTRO ══ -->
-<div class="slide" id="s4">
-  <h1 style="color:#FFD700;margin-bottom:6px">THE SOLUTION 🛠️</h1>
-  <h2>An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</h2>
+<div class="slide" id="s4" style="position:relative;overflow:hidden">
+  <!-- Matrix rain behind everything -->
+  <canvas id="matrix" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none"></canvas>
 
-  <div class="blocks" style="margin-top:8px">
-    <div class="block">
-      <div class="bicon">🌐</div>
-      <div class="btitle" style="font-size:9px">Open Source</div>
+  <!-- Content ON TOP with solid dark glow so text is always readable -->
+  <div style="position:relative;z-index:10">
+    <h1 style="color:#FFD700;margin-bottom:6px;text-shadow:0 0 20px #0d1117,0 0 40px #0d1117,3px 3px #000">THE SOLUTION 🛠️</h1>
+    <h2 style="text-shadow:0 0 20px #0d1117,0 0 40px #0d1117,2px 2px #000">An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</h2>
+
+    <div class="blocks" style="margin-top:8px">
+      <div class="block" style="background:rgba(17,17,17,0.9)">
+        <div class="bicon">🌐</div>
+        <div class="btitle" style="font-size:9px">Open Source</div>
+      </div>
+      <div class="block" style="background:rgba(17,17,17,0.9)">
+        <div class="bicon">🤖</div>
+        <div class="btitle" style="font-size:9px">AI-Enabled</div>
+      </div>
+      <div class="block" style="background:rgba(17,17,17,0.9)">
+        <div class="bicon">👥</div>
+        <div class="btitle" style="font-size:9px">Community<br>Driven</div>
+      </div>
+      <div class="block" style="background:rgba(17,17,17,0.9)">
+        <div class="bicon">⚡</div>
+        <div class="btitle" style="font-size:9px">Vibe-Coded</div>
+      </div>
     </div>
-    <div class="block">
-      <div class="bicon">🤖</div>
-      <div class="btitle" style="font-size:9px">AI-Enabled</div>
-    </div>
-    <div class="block">
-      <div class="bicon">👥</div>
-      <div class="btitle" style="font-size:9px">Community<br>Driven</div>
-    </div>
-    <div class="block">
-      <div class="bicon">⚡</div>
-      <div class="btitle" style="font-size:9px">Vibe-Coded</div>
-    </div>
+
+    <div class="big" style="color:#55ff55;margin-top:10px;text-shadow:0 0 20px #0d1117,0 0 40px #0d1117,4px 4px #000">DEMO 🚀</div>
   </div>
-
-  <div class="big" style="color:#55ff55;margin-top:10px">DEMO 🚀</div>
 </div>
 
 <!-- ══ 5 — WHAT WILL YOU BUILD? ══ -->
