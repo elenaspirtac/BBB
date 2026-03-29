@@ -391,33 +391,29 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
   <!-- Matrix rain covers full slide -->
   <canvas id="matrix" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none"></canvas>
 
-  <!-- Content centered ON TOP -->
-  <div style="position:absolute;top:0;left:0;right:0;bottom:54px;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center">
-    <div style="background:#0d1117;padding:24px 50px;border:3px solid #444;outline:2px solid #000;box-shadow:0 0 60px 30px #0d1117;display:flex;flex-direction:column;align-items:center;text-align:center">
-    <h1 style="color:#FFD700;margin-bottom:6px">THE SOLUTION 🛠️</h1>
-    <h2>An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</h2>
-
-    <div class="blocks" style="margin-top:8px">
-      <div class="block" style="background:rgba(17,17,17,0.9)">
+  <!-- Content centered ON TOP in one solid panel -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;background:#0d1117;padding:30px 50px;border:3px solid #444;outline:2px solid #000;box-shadow:0 0 80px 40px #0d1117;text-align:center;max-width:90vw">
+    <h1 style="color:#FFD700;margin-bottom:8px">THE SOLUTION 🛠️</h1>
+    <h2 style="margin-bottom:10px">An <span style="color:#55ff55">open source</span>, <span style="color:#55ffff">AI-enabled</span>,<br><span style="color:#ff55ff">community-driven</span> BIM platform.</h2>
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <div class="block" style="background:#111">
         <div class="bicon">🌐</div>
         <div class="btitle" style="font-size:9px">Open Source</div>
       </div>
-      <div class="block" style="background:rgba(17,17,17,0.9)">
+      <div class="block" style="background:#111">
         <div class="bicon">🤖</div>
         <div class="btitle" style="font-size:9px">AI-Enabled</div>
       </div>
-      <div class="block" style="background:rgba(17,17,17,0.9)">
+      <div class="block" style="background:#111">
         <div class="bicon">👥</div>
         <div class="btitle" style="font-size:9px">Community<br>Driven</div>
       </div>
-      <div class="block" style="background:rgba(17,17,17,0.9)">
+      <div class="block" style="background:#111">
         <div class="bicon">⚡</div>
         <div class="btitle" style="font-size:9px">Vibe-Coded</div>
       </div>
     </div>
-
-    <div class="big" style="color:#55ff55;margin-top:10px">DEMO 🚀</div>
-    </div>
+    <div class="big" style="color:#55ff55;margin-top:12px">DEMO 🚀</div>
   </div>
 </div>
 
