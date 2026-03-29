@@ -483,7 +483,7 @@ h3    { font-size:clamp(10px,1.4vw,18px); color:#55ffff; text-shadow:1px 1px #00
     initMatrix();
     window.addEventListener('resize',initMatrix);
     setInterval(()=>{
-      if(c!==4)return;
+      if(c!==4){ctx.clearRect(0,0,mx.width,mx.height);drops.fill(1);return;}
       ctx.fillStyle='rgba(13,17,23,0.05)';
       ctx.fillRect(0,0,mx.width,mx.height);
       ctx.fillStyle='#55ff55';
